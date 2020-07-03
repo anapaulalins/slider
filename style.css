@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: 650px;
+}
+.slider-content{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.btn-prev,.btn-next{
+    position: absolute;
+    top: 50%;
+    color: rgb(177, 174, 174);
+    cursor: pointer;
+}
+.btn-prev{
+    left: 10%;
+}
+.btn-next{
+    right: 10%;
+
+}
+.slide{
+    display: none;
+}
+.slide.active{
+    display: block;
+}
+.circle{
+    display: flex;
+    position: absolute;
+    left: 45%;
+    bottom: 10%;
+}
+.circle-element{
+    border: 0.2rem solid rgb(146, 144, 144);
+    width: 0.8rem;
+    height: 0.8rem;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border-radius: 1rem;
+}
+.circle-element.active{
+    background-color: rgb(146, 144, 144) ;
+}
